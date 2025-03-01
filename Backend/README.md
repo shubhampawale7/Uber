@@ -1,3 +1,5 @@
+# Users Endpoints Documentation
+
 # /users/register Endpoint Documentation
 
 ## Description
