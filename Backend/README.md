@@ -198,9 +198,11 @@ This endpoint logs out the user by invalidating their authentication token.
 ## /captains/register Endpoint
 
 ### Description
+
 This endpoint registers a new captain. It validates the input data and creates a captain record in the database with vehicle information.
 
 ### Request
+
 - **Method:** `POST`
 - **URL:** `/captains/register`
 - **Headers:** `Content-Type: application/json`
@@ -223,7 +225,9 @@ This endpoint registers a new captain. It validates the input data and creates a
   ```
 
 ### Responses
+
 - **201 Created**
+
   ```json
   {
     "token": "JWT_TOKEN",
@@ -249,9 +253,11 @@ This endpoint registers a new captain. It validates the input data and creates a
 ## /captains/login Endpoint
 
 ### Description
+
 This endpoint authenticates a captain and provides a JWT token for authorized access.
 
 ### Request
+
 - **Method:** `POST`
 - **URL:** `/captains/login`
 - **Headers:** `Content-Type: application/json`
@@ -264,7 +270,9 @@ This endpoint authenticates a captain and provides a JWT token for authorized ac
   ```
 
 ### Responses
+
 - **200 OK**
+
   ```json
   {
     "token": "JWT_TOKEN",
@@ -284,9 +292,11 @@ This endpoint authenticates a captain and provides a JWT token for authorized ac
 ## /captains/profile Endpoint
 
 ### Description
+
 This endpoint retrieves the profile information of the authenticated captain.
 
 ### Request
+
 - **Method:** `GET`
 - **URL:** `/captains/profile`
 - **Headers:**
@@ -294,6 +304,7 @@ This endpoint retrieves the profile information of the authenticated captain.
   - Or valid session cookie with token
 
 ### Responses
+
 - **200 OK**
   ```json
   {
@@ -319,9 +330,11 @@ This endpoint retrieves the profile information of the authenticated captain.
 ## /captains/logout Endpoint
 
 ### Description
+
 This endpoint logs out the captain by invalidating their authentication token.
 
 ### Request
+
 - **Method:** `GET`
 - **URL:** `/captains/logout`
 - **Headers:**
@@ -329,7 +342,9 @@ This endpoint logs out the captain by invalidating their authentication token.
   - Or valid session cookie with token
 
 ### Responses
+
 - **200 OK**
+
   ```json
   {
     "message": "Logged out successfully"
