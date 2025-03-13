@@ -71,3 +71,25 @@ All form components use React's useState hook for local state management:
 - Form field values
 - User/Captain data objects
 - Form submission handling
+
+### UserContext
+
+The application uses React Context API for global state management through UserContext:
+
+- Manages user authentication state
+- Stores user profile information:
+  - Email
+  - Full name (first name and last name)
+- Available throughout the application via UserDataContext.Provider
+- Implemented using createContext and useState hooks
+- Located in `/src/context/UserContext.jsx`
+
+Example usage:
+
+```javascript
+import { useContext } from "react";
+import { UserDataContext } from "../context/UserContext";
+
+// Access user data in any component
+const userData = useContext(UserDataContext);
+```
